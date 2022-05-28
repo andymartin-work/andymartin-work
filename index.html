@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <title>Andrew Martin - Instructional Designer</title>
     <link
     rel="stylesheet"
@@ -93,14 +94,28 @@
       <div>
         <h2 class="mb-1 text-xl font-semibold text-left sm:text-2xl sm:text-center lg:text-left mytext">Let's make an impact.</h2>
         <p class="mb-6 text-lg font-normal text-left text-gray-200 sm:text-xl lg:mb-0 sm:text-center lg:text-left mytext">Hire me to build your next training course, documentation site, or interactive presentation.</p>
+
       </div>
-      <div class="flex flex-col mb-2 space-x-0 space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0">
-        <button class="btn bg-white text-black hover:bg-gray-900 hover:text-white inline-flex py-2 px-6 text-lg normal-case transition ease-in-out delay-150 hover:scale-110 mytext">Connect with Andy</button>
+      <div class="flex flex-col mb-2 space-x-6 sm:space-x-6 sm:space-y-2">
+        
+        <div><p id="copied"></p></div>
+        <button onclick="copyText()"class="btn bg-white text-black hover:bg-gray-900 hover:text-white inline-flex py-2 px-6 text-lg normal-case transition ease-in-out delay-150 hover:scale-110"><i class="fas fa-copy mr-2"></i>andylearninglab@gmail.com</button>
+        <p class="mb-6 text-lg font-normal text-center text-gray-200 sm:text-xl lg:mb-0 mytext">Click to copy my email address.</p>
       </div>
     </div>
   </section>
 
   
 <script src="index.js"></script>
+<script>
+  function copyText() {
+       
+       /* Copy text into clipboard */
+       navigator.clipboard.writeText 
+           ("andylearninglab@gmail.com");
+ 
+           document.getElementById("copied").innerHTML = "Copied!";
+  }
+ </script>
 </body>
 </html>

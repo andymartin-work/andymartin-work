@@ -10,6 +10,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
   <link href="http://fonts.cdnfonts.com/css/palatino" rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
@@ -214,8 +215,11 @@
       <h2 class="mb-1 text-xl font-semibold text-left sm:text-2xl sm:text-center lg:text-left">Let's make an impact.</h2>
       <p class="mb-6 text-lg font-normal text-left text-gray-200 sm:text-xl lg:mb-0 sm:text-center lg:text-left">Open for freelance and full-time opportunities.</p>
     </div>
-    <div class="flex flex-col mb-2 space-x-0 space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0">
-      <button class="btn bg-white text-black hover:bg-gray-900 hover:text-white inline-flex py-2 px-6 text-lg normal-case transition ease-in-out delay-150 hover:scale-110">Connect with Andy</button>
+    <div class="flex flex-col mb-2 space-x-6 sm:space-x-6 sm:space-y-2">
+        
+      <div><p id="copied"></p></div>
+      <button onclick="copyText()"class="btn bg-white text-black hover:bg-gray-900 hover:text-white inline-flex py-2 px-6 text-lg normal-case transition ease-in-out delay-150 hover:scale-110"><i class="fas fa-copy mr-2"></i>andylearninglab@gmail.com</button>
+      <p class="mb-6 text-lg font-normal text-center text-gray-200 sm:text-xl lg:mb-0 mytext">Click to copy my email address.</p>
     </div>
   </div>
 </section>    
@@ -224,10 +228,16 @@
 
 
 <script src="index.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 <script>
-  // Accepts any class name
-  var rellax = new Rellax('.rellax');
+ function copyText() {
+      
+      /* Copy text into clipboard */
+      navigator.clipboard.writeText 
+          ("andylearninglab@gmail.com");
+
+          document.getElementById("copied").innerHTML = "Copied!";
+ }
 </script>
+
 </body>
 </html>
