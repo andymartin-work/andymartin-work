@@ -2713,10 +2713,6 @@ html {
   margin-top: 4rem;
 }
 
-.ml-20 {
-  margin-left: 5rem;
-}
-
 .inline {
   display: inline;
 }
@@ -2811,6 +2807,10 @@ html {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -3840,6 +3840,10 @@ html {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
