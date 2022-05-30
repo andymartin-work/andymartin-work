@@ -2645,6 +2645,10 @@ html {
   margin-bottom: 1.5rem;
 }
 
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -3632,10 +3636,6 @@ html {
     background-color: hsl(var(--er) / var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: hsl(var(--erc, var(--nc)) / var(--tw-text-opacity));
-  }
-
-  .sm\:ml-6 {
-    margin-left: 1.5rem;
   }
 
   .sm\:block {
